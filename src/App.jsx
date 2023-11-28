@@ -51,6 +51,7 @@ const App = () => {
           setNewName('')
           setNewNumber('')
         })
+        .catch(error => notify(error.response.data.error))
       return
     }
 

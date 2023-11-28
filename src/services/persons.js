@@ -15,7 +15,6 @@ const create = newObject => {
   console.log(request)
   return request
     .then(response => response.data)
-    .catch(error => { console.log(`POST: error=${error}`) })
 }
 
 const deleteOf = id => {
